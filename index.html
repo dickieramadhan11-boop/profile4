@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dickie Ramadhan — Profil</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+  <nav>
+    <a href="#beranda" class="nav-logo">Dickie Ramadhan</a>
+    <ul class="nav-tautan">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <button id="theme-toggle" class="tombol-sewa">🌙</button>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <a href="#kontak" class="tombol-sewa">Contact</a>
+    <button class="hamburger" id="hamburger2"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="nav-overlay" id="navOverlay">
+    <a href="#beranda" onclick="tutupNav()">Beranda</a>
+    <a href="#tentang" onclick="tutupNav()">Tentang</a>
+    <a href="#kontak" onclick="tutupNav()">Kontak</a>
+  </div>
+
+  <section id="beranda">
+    <div>
+      <h1 class="hero-nama">Dickie<br><span>Ramadhan</span></h1>
+      <p class="hero-jabatan">Mahasiswa Sistem Informasi</p>
+      <p class="hero-bio">Halo saya Dickie Ramadhan. Silakan hubungi saya melalui Instagram atau WhatsApp untuk kerja
+        sama, bisnis, atau kolaborasi.</p>
+      <div class="hero-tombol">
+        <a href="https://www.instagram.com/dickieramadhan" class="tombol-utama">Instagram</a>
+        <a href="https://wa.me/6282179424023" class="tombol-garis">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang">
+    <div class="tentang-grid">
+      <div class="tentang-foto">
+        <img src="assets/foto.jpeg" alt="Dickie Ramadhan">
+        <div class="tentang-label-foto">📍 Indonesia</div>
+      </div>
+      <div>
+        <div class="label-seksi">✦ Tentang Saya</div>
+        <h2 class="judul-seksi">Dickie Ramadhan</h2>
+        <p>Saya, Dickie Ramadhan, adalah mahasiswa Sistem Informasi di Universitas Muhammadiyah Sumatera Utara. Saya
+          memiliki minat yang besar dalam pengembangan aplikasi, manajemen data, dan pemecahan masalah berbasis
+          teknologi. Saya berkomitmen untuk terus mengembangkan keterampilan teknis dan profesional melalui proyek
+          akademik, organisasi, dan pengalaman praktis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="keahlian">
+    <div class="label-seksi">✦ Keahlian Saya</div>
+    <div class="grid-keahlian">
+      <div class="kartu-keahlian" onclick="toggleProgress(this)">
+        <div class="nama-keahlian">HTML5</div>
+        <div class="deskripsi-keahlian">Markup & Struktur Web</div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--fill:95%"></div>
+        </div>
+      </div>
+      <div class="kartu-keahlian" onclick="toggleProgress(this)">
+        <div class="nama-keahlian">CSS3</div>
+        <div class="deskripsi-keahlian">Styling & Animasi</div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--fill:90%"></div>
+        </div>
+      </div>
+      <div class="kartu-keahlian" onclick="toggleProgress(this)">
+        <div class="nama-keahlian">JavaScript</div>
+        <div class="deskripsi-keahlian">Interaktivitas Web</div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--fill:85%"></div>
+        </div>
+      </div>
+      <div class="kartu-keahlian" onclick="toggleProgress(this)">
+        <div class="nama-keahlian">Git & GitHub</div>
+        <div class="deskripsi-keahlian">Version Control</div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--fill:80%"></div>
+        </div>
+      </div>
+      <div class="kartu-keahlian" onclick="toggleProgress(this)">
+        <div class="nama-keahlian">React</div>
+        <div class="deskripsi-keahlian">UI & SPA</div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--fill:75%"></div>
+        </div>
+      </div>
+      <div class="kartu-keahlian" onclick="toggleProgress(this)">
+        <div class="nama-keahlian">Performance</div>
+        <div class="deskripsi-keahlian">Optimization</div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--fill:80%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyek">
+    <div class="label-seksi">✦ Proyek Saya</div>
+    <div class="grid-proyek">
+
+      <div class="kartu-proyek" onclick="toggleSplit(this)">
+        <div class="proyek-judul">Website Portfolio Pribadi</div>
+        <div class="proyek-detail">
+          <p><strong>Deskripsi:</strong> Situs menampilkan profil, keahlian, dan proyek yang pernah dikerjakan.</p>
+          <p><strong>Alasan unggulan:</strong> Menunjukkan kemampuan HTML, CSS, dan dasar JavaScript.</p>
+        </div>
+      </div>
+
+      <div class="kartu-proyek" onclick="toggleSplit(this)">
+        <div class="proyek-judul">To-Do List Interaktif</div>
+        <div class="proyek-detail">
+          <p><strong>Deskripsi:</strong> Aplikasi sederhana untuk menambah, menghapus, dan menandai tugas selesai.</p>
+          <p><strong>Alasan unggulan:</strong> Menunjukkan kemampuan interaktif dengan JavaScript dan logika
+            pemrograman.</p>
+        </div>
+      </div>
+
+      <div class="kartu-proyek" onclick="toggleSplit(this)">
+        <div class="proyek-judul">Galeri Foto Responsif</div>
+        <div class="proyek-detail">
+          <p><strong>Deskripsi:</strong> Website menampilkan foto dalam grid yang bisa diperbesar saat diklik.</p>
+          <p><strong>Alasan unggulan:</strong> Menunjukkan kemampuan desain responsif dan CSS flexbox/grid.</p>
+        </div>
+      </div>
+
+      <div class="kartu-proyek" onclick="toggleSplit(this)">
+        <div class="proyek-judul">Website Toko Online Mini</div>
+        <div class="proyek-detail">
+          <p><strong>Deskripsi:</strong> Halaman menampilkan produk, harga, dan tombol “Beli” (simulasi).</p>
+          <p><strong>Alasan unggulan:</strong> Menunjukkan pemahaman dasar e-commerce dan layout profesional.</p>
+        </div>
+      </div>
+
+      <div class="kartu-proyek" onclick="toggleSplit(this)">
+        <div class="proyek-judul">Aplikasi Kalkulator Online</div>
+        <div class="proyek-detail">
+          <p><strong>Deskripsi:</strong> Kalkulator sederhana berbasis web untuk operasi dasar matematika.</p>
+          <p><strong>Alasan unggulan:</strong> Menunjukkan kemampuan logika pemrograman dan interaktivitas.</p>
+        </div>
+      </div>
+
+      <div class="kartu-proyek" onclick="toggleSplit(this)">
+        <div class="proyek-judul">Blog Sederhana</div>
+        <div class="proyek-detail">
+          <p><strong>Deskripsi:</strong> Halaman menampilkan artikel dengan gambar, judul, dan tanggal.</p>
+          <p><strong>Alasan unggulan:</strong> Menunjukkan kemampuan struktur konten, navigasi, dan styling teks.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="kontak">
+    <div class="kontak-bungkus">
+      <div class="label-seksi">✦ Hubungi Saya</div>
+      <h2 class="judul-seksi">Kontak Dickie Ramadhan</h2>
+      <p>Untuk kerja sama, bisnis, atau pertanyaan silakan hubungi saya melalui Instagram atau WhatsApp.</p>
+      <div>
+        <a href="https://www.instagram.com/dickieramadhan" class="tautan-media">📷 Instagram</a>
+        <a href="https://wa.me/6282179424023" class="tautan-media">💬 WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Dickie Ramadhan. All rights reserved.
+  </footer>
+
+  <script>
+    // ===== NAVIGATION =====
+    const hamburger = document.getElementById('hamburger');
+    const hamburger2 = document.getElementById('hamburger2');
+    const navOverlay = document.getElementById('navOverlay');
+
+    hamburger.addEventListener('click', () => navOverlay.classList.toggle('buka'));
+    hamburger2.addEventListener('click', () => navOverlay.classList.toggle('buka'));
+
+    function tutupNav() { navOverlay.classList.remove('buka'); }
+
+    // ===== SKILLS =====
+    function toggleProgress(card) {
+      const fill = card.querySelector('.progress-fill');
+      const max = fill.style.getPropertyValue('--fill');
+      fill.style.width = (fill.style.width === max ? '0%' : max);
+    }
+
+    // ===== PROJECTS =====
+    function toggleSplit(card) {
+      card.classList.toggle('terbuka');
+    }
+
+    // ===== LIGHT / DARK MODE =====
+    const themeToggle = document.getElementById("theme-toggle");
+    const html = document.documentElement;
+
+    function initializeTheme() {
+      const saved = localStorage.getItem("theme");
+      if (saved === "light") {
+        html.classList.add("light-mode");
+        themeToggle.textContent = "☀️";
+      } else {
+        html.classList.remove("light-mode");
+        themeToggle.textContent = "🌙";
+      }
+    }
+
+    function toggleTheme() {
+      html.classList.toggle("light-mode");
+      const isLight = html.classList.contains("light-mode");
+      localStorage.setItem("theme", isLight ? "light" : "dark");
+      themeToggle.textContent = isLight ? "☀️" : "🌙";
+    }
+
+    themeToggle.addEventListener("click", toggleTheme);
+    document.addEventListener("DOMContentLoaded", initializeTheme);
+
+    // ===== STICKY NAVBAR =====
+    window.addEventListener("scroll", () => {
+      const nav = document.querySelector("nav");
+      nav.style.background = window.scrollY > 40 ? "rgba(0,0,0,0.9)" : "rgba(0,0,0,0.7)";
+    });
+  </script>
+
+</body>
+
+</html>
